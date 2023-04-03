@@ -23,13 +23,14 @@ public class Notebook implements Service {
         }
     }
 
-//    public String showAll2(){
-//        StringBuilder str = new StringBuilder();
-//        for (String el: modelArrayList) {
-//            str.append(el).append("\n");
-//
-//        }
-//        return str.toString();
-//    }
+    // этот метод добавил чтобы проверить будет ли работать, если передавать напрямую из этого класса в Controller
+    public String showAll2(){
+        StringBuilder str = new StringBuilder();
+        for (String el: modelArrayList) {
+            str.append(el).append("\n");
+
+        }
+        return str.toString();
+    }
 
 }

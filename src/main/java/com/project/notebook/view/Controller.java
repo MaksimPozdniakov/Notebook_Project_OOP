@@ -24,26 +24,26 @@ public class Controller implements View {
     }
     @FXML
     private TextArea result;
-    public void showNot(){
-        presenter.print();
+//    public void showNot(){
+//        presenter.print();
+//    }
+
+
+    // Вот с этим добром работает
+    Notebook n = new Notebook();
+
+    @FXML
+    private void openNet() throws FileNotFoundException {
+        result.setText("Блокнот открыт!");
+        n.read();
     }
 
 
-
-//    Notebook n = new Notebook();
-
-//    @FXML
-//    private void openNet() throws FileNotFoundException {
-//        result.setText("Блокнот открыт!");
-//        n.read();
-//    }
-
-
-    //    @FXML
-//    private void showNot(){
-//        n.showAll();
-//        result.setText(n.showAll2());
-//    }
+        @FXML
+    private void showNot(){
+        n.showAll();
+        result.setText(n.showAll2());
+    }
 
 
 }
