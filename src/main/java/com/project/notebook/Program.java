@@ -1,10 +1,10 @@
 package com.project.notebook;
 
 import com.project.notebook.model.Notebook;
-import com.project.notebook.model.Service;
 import com.project.notebook.presenter.Presenter;
 import com.project.notebook.view.Controller;
-import com.project.notebook.view.View;
+import com.project.notebook.model.Service;
+import com.project.notebook.model.View;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;

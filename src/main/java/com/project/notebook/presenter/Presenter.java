@@ -1,8 +1,7 @@
 package com.project.notebook.presenter;
 
 import com.project.notebook.model.Service;
-import com.project.notebook.view.View;
-
+import com.project.notebook.model.View;
 import java.io.FileNotFoundException;
 
 public class Presenter {

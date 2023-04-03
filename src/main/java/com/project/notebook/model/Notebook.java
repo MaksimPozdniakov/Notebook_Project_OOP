@@ -14,6 +14,7 @@ public class Notebook implements Service {
         return modelArrayList;
     }
 
+
     public void showAll(){
         int num = 1;
         for (String el: modelArrayList) {
@@ -22,13 +23,13 @@ public class Notebook implements Service {
         }
     }
 
-    public String showAll2(){
-        StringBuilder str = new StringBuilder();
-        for (String el: modelArrayList) {
-            str.append(el).append("\n");
-
-        }
-        return str.toString();
-    }
+//    public String showAll2(){
+//        StringBuilder str = new StringBuilder();
+//        for (String el: modelArrayList) {
+//            str.append(el).append("\n");
+//
+//        }
+//        return str.toString();
+//    }
 
 }
