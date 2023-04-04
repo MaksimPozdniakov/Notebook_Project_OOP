@@ -14,17 +14,11 @@ public class Notebook{
         return modelArrayList;
     }
 
-
-    public void showAll(){
-        int num = 1;
-        for (String el: modelArrayList) {
-            System.out.printf("\t%d) %s\n",num,el);
-            num++;
-        }
+    public void getNote(ArrayList<String> ourTask) {
+        modelArrayList.addAll(ourTask);
     }
 
-    // этот метод добавил чтобы проверить будет ли работать, если передавать напрямую из этого класса в Controller
-    public String showAll2(){
+    public String showAll(){
         StringBuilder str = new StringBuilder();
         for (String el: modelArrayList) {
             str.append(el).append("\n");

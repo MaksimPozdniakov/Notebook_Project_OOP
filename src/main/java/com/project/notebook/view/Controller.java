@@ -20,9 +20,13 @@ public class Controller{
         presenter.readBook();
     }
 
-    public void showNot(){
+    public void showNet(){
         result.setText(presenter.print());
     }
+
+
+
+
 
     @FXML
     private MenuItem buttonClose;

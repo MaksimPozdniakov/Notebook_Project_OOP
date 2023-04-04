@@ -21,7 +21,7 @@
       <MenuButton accessibleRole="MENU_BAR" alignment="CENTER" contentDisplay="CENTER" layoutX="37.0" layoutY="99.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="182.0" text="Меню">
         <items>
           <MenuItem mnemonicParsing="false" onAction="#openNet" text="Открыть" />
-          <MenuItem mnemonicParsing="false" onAction="#showNot" text="Показать" />
+          <MenuItem mnemonicParsing="false" onAction="#showNet" text="Показать" />
             <MenuItem mnemonicParsing="false" text="Найти" />
             <MenuItem mnemonicParsing="false" text="Удалить" />
             <MenuItem mnemonicParsing="false" text="Сохранить" />
@@ -29,5 +29,6 @@
         </items>
       </MenuButton>
       <TextArea fx:id="result" layoutX="253.0" layoutY="99.0" prefHeight="449.0" prefWidth="733.0" />
+      <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="740.0" layoutY="679.0" prefHeight="17.0" prefWidth="246.0" text="The program was created by Maxim" />
    </children>
 </AnchorPane>
