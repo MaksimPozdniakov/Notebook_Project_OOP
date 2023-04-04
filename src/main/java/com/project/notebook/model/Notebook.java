@@ -3,7 +3,7 @@ package com.project.notebook.model;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
 
-public class Notebook implements Service {
+public class Notebook{
 
     protected ArrayList<String> modelArrayList = new ArrayList<>();
 

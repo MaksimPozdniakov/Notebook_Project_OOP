@@ -1,15 +1,10 @@
 package com.project.notebook;
 
-import com.project.notebook.model.Notebook;
-import com.project.notebook.presenter.Presenter;
-import com.project.notebook.view.Controller;
-import com.project.notebook.model.Service;
-import com.project.notebook.model.View;
+
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-
 import java.io.IOException;
 
 public class Program extends Application {
@@ -22,9 +17,9 @@ public class Program extends Application {
         stage.setScene(scene);
         stage.show();
 
-        View view = new Controller();
-        Service service = new Notebook();
-        new Presenter(view,service);
+//        View view = new Controller();
+//        Service service = new Notebook();
+//        new Presenter(view,service);
 
     }
 

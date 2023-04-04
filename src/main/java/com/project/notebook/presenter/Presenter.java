@@ -1,26 +1,20 @@
 package com.project.notebook.presenter;
 
-import com.project.notebook.model.Service;
-import com.project.notebook.model.View;
+import com.project.notebook.model.Notebook;
 import java.io.FileNotFoundException;
 
-public class Presenter {
+public class Presenter{
 
-    private View view;
-    private final Service service;
-
-    public Presenter(View view, Service service) {
-        this.view = view;
-        this.service = service;
-        view.setPresenter(this);
-    }
+    Notebook notebook = new Notebook();
 
     public void readBook() throws FileNotFoundException {
-        service.read();
+        notebook.read();
     }
 
-    public void print(){
-        service.showAll();
+    public String print(){
+        return notebook.showAll2();
     }
+
+
 
 }
