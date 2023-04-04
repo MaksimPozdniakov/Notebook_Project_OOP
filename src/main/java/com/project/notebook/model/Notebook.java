@@ -29,6 +29,21 @@ public class Notebook{
         return modelArrayList;
     }
 
+    public String search(String searchString){
+        StringBuilder str = new StringBuilder();
+        boolean isFound = false;
+        for (int i = 0; i < modelArrayList.size(); i++) {
+            if (modelArrayList.get(i).contains(searchString)){
+                str.append(modelArrayList.get(i));
+                isFound = true;
+            }
+        }
+        if (!isFound) {
+            str.append("Такой записи нет!");
+        }
+        return str.toString();
+    }
+
 
     public String showAll(){
         StringBuilder str = new StringBuilder();

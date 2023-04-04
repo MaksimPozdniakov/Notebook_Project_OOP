@@ -27,6 +27,13 @@ public class Controller{
         result.setText(presenter.print());
     }
 
+    public void search(){
+        TextInputDialog dialog = new TextInputDialog();
+        dialog.setHeaderText("Что ищем? ");
+        Optional<String> result1 = dialog.showAndWait();
+        String searchString = result1.orElse("");
+        result.setText(presenter.searchStr(searchString));
+    }
 
     public void addImportantThings(){
         TextInputDialog dialog = new TextInputDialog();
@@ -99,6 +106,7 @@ public class Controller{
     public void save(){
         presenter.writeBook();
     }
+
 
     @FXML
     private MenuItem buttonClose;

@@ -31,5 +31,9 @@ public class Presenter{
         notebook.removeNote(index);
     }
 
+    public String searchStr(String searchString){
+        return notebook.search(searchString);
+    }
+
 
 }
