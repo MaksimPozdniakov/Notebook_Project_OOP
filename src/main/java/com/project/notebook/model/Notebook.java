@@ -18,6 +18,12 @@ public class Notebook{
         modelArrayList.addAll(ourTask);
     }
 
+    public ArrayList<String> removeNote(int index){
+        modelArrayList.remove(index-1);
+        return modelArrayList;
+    }
+
+
     public String showAll(){
         StringBuilder str = new StringBuilder();
         for (String el: modelArrayList) {

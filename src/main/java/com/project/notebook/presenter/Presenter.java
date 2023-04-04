@@ -23,4 +23,9 @@ public class Presenter{
         notebook.getNote(ourTasks);
     }
 
+    public void remove(int index){
+        notebook.removeNote(index);
+    }
+
+
 }

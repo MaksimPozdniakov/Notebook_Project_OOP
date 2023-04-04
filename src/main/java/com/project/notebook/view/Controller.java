@@ -87,6 +87,16 @@ public class Controller{
         presenter.addNote(new ProductList(date,nameThing,text));
     }
 
+    public void removeNote(){
+        TextInputDialog dialog = new TextInputDialog();
+        dialog.setHeaderText("Какую запись нужно удалить?");
+        Optional<String> numberOptional = dialog.showAndWait();
+        String num = numberOptional.orElse("");
+        int value = Integer.parseInt(num);
+        presenter.remove(value - 1);
+    }
+
+
 
     @FXML
     private MenuItem buttonClose;
