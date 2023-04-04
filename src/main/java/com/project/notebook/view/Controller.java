@@ -96,7 +96,9 @@ public class Controller{
         presenter.remove(value - 1);
     }
 
-
+    public void save(){
+        presenter.writeBook();
+    }
 
     @FXML
     private MenuItem buttonClose;

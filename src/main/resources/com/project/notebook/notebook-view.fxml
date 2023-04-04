@@ -35,7 +35,7 @@
             </Menu>
             <MenuItem mnemonicParsing="false" text="Найти" />
             <MenuItem mnemonicParsing="false" onAction="#removeNote" text="Удалить" />
-            <MenuItem mnemonicParsing="false" text="Сохранить" />
+            <MenuItem mnemonicParsing="false" onAction="#save" text="Сохранить" />
             <MenuItem fx:id="buttonClose" mnemonicParsing="false" onAction="#handelButtonClose" text="Закрыть" />
         </items>
       </MenuButton>

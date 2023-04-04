@@ -13,6 +13,10 @@ public class Presenter{
         notebook.read();
     }
 
+    public void writeBook(){
+        notebook.write();
+    }
+
     public String print(){
         return notebook.showAll();
     }

@@ -14,6 +14,12 @@ public class Notebook{
         return modelArrayList;
     }
 
+    public void write(){
+        WriteFile ourDb = new WriteFile("C:\\Users\\PMPav\\Desktop\\Projects\\Final_Project_JavaOOP\\Notebook\\" +
+                "src\\main\\java\\com\\project\\notebook\\db\\file.txt");
+        ourDb.write(modelArrayList);
+    }
+
     public void getNote(ArrayList<String> ourTask) {
         modelArrayList.addAll(ourTask);
     }
