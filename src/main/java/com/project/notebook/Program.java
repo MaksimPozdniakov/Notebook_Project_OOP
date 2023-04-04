@@ -1,6 +1,5 @@
 package com.project.notebook;
 
-
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -16,11 +15,6 @@ public class Program extends Application {
         stage.setTitle("Notebook");
         stage.setScene(scene);
         stage.show();
-
-//        View view = new Controller();
-//        Service service = new Notebook();
-//        new Presenter(view,service);
-
     }
 
     public static void main(String[] args) {
