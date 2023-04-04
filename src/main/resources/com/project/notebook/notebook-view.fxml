@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuButton?>
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.TextArea?>
@@ -22,6 +23,16 @@
         <items>
           <MenuItem mnemonicParsing="false" onAction="#openNet" text="Открыть" />
           <MenuItem mnemonicParsing="false" onAction="#showNet" text="Показать" />
+            <Menu mnemonicParsing="false" text="Добавить">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#addImportantThings" text="Добавить важную задачу">
+                  </MenuItem>
+                  <MenuItem mnemonicParsing="false" onAction="#addUnimportantThings" text="Добавить неважную задачу">
+                  </MenuItem>
+                  <MenuItem mnemonicParsing="false" onAction="#addProductList" text="Добавить новый элемент в список покупок">
+                  </MenuItem>
+              </items>
+            </Menu>
             <MenuItem mnemonicParsing="false" text="Найти" />
             <MenuItem mnemonicParsing="false" text="Удалить" />
             <MenuItem mnemonicParsing="false" text="Сохранить" />

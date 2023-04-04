@@ -2,7 +2,6 @@ package com.project.notebook.presenter;
 
 import com.project.notebook.model.Notebook;
 import com.project.notebook.model.baseClass.Notes;
-
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
 

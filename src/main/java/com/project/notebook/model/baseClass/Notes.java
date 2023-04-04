@@ -1,9 +1,10 @@
 package com.project.notebook.model.baseClass;
 
 public class Notes {
-protected String date;
-protected String nameThing;
-protected String text;
+
+    protected String date;
+    protected String nameThing;
+    protected String text;
 
     public Notes(String date, String nameThing, String text) {
         this.date = date;

@@ -6,6 +6,8 @@ module com.project.notebook {
     opens com.project.notebook to javafx.fxml;
     exports com.project.notebook;
 
+    exports com.project.notebook.model.baseClass;
+
     opens com.project.notebook.model to javafx.fxml;
     exports com.project.notebook.model;
 
