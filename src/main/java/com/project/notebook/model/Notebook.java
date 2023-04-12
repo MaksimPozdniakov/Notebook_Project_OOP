@@ -8,8 +8,8 @@ public class Notebook{
     protected ArrayList<String> modelArrayList = new ArrayList<>();
 
     public ArrayList<String> read() throws FileNotFoundException {
-        ReadFile ourDb = new ReadFile("C:\\Users\\PMPav\\Desktop\\Second block of study\\Seminars\\" +
-                "Final_Project_JavaOOP\\Notebook\\src\\main\\java\\com\\project\\notebook\\db\\file.txt");
+        ReadFile ourDb = new ReadFile("C:\\Users\\PMPav\\Desktop\\Projects\\Notebook_Project_OOP\\Notebook\\src\\" +
+                "main\\java\\com\\project\\notebook\\db\\file.txt");
         ourDb.read(modelArrayList);
         return modelArrayList;
     }
